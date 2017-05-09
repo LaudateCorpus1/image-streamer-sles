@@ -1,10 +1,15 @@
 # Artifact Bundle Contents
 
+## Version history
+HPE-SLES-12-2017-05-09.zip - Fixed character encoding issues
+
+HPE-SLES-12-2017-03-24.zip - First version 
+
 --------------------------------------------------------------------------------
-         File name: HPE-SLES-12 - 2017-03-24.zip
-         Name (in manifest): HPE-SLES-12 - 2017-03-24
+         File name: HPE-SLES-12-2017-05-09.zip
+         Name (in manifest): HPE-SLES-12-2017-05-09
        Description: ImageStreamer artifacts for SLES 12 personalization and generalization
-             Dated: 2017-03-24 (16:39:45)
+             Dated: 2017-05-09 (18:53:05)
 --------------------------------------------------------------------------------
 
 Build Plans:

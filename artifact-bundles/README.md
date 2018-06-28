@@ -6,7 +6,8 @@
 
 ## Version history
 
-HPE-SLES-12-2018-05-10-v4.1.zip - Defect fixes
+HPE-SLES-12-2018-05-10-v4.1.zip 
+- Defect fixes
 
 ## Artifact Bundle Contents
 

@@ -5,7 +5,7 @@
 - Click on 'Branch:' drop down menu on this page to get artifact bundles for other ImageStreamer releases
 
 ## Version history
-HPE-SLES-12-2018-08-23-v4.0.zip - Fixed ibftBond not getting created issue in SLES12 SP2
+HPE-SLES-12-2018-08-23-v4.0.zip - Fixed the issue - ibftBond not getting created in SLES12 SP2
 
 HPE-SLES-12-2017-12-21-v3.1.zip - Defect fixes
 

@@ -5,6 +5,7 @@
 - Click on 'Branch:' drop down menu on this page to get artifact bundles for other ImageStreamer releases
 
 ## Version history
+HPE-SLES-12-2018-08-23-v4.0.zip - Fixed golden image capture issue and iscsi bond interface ibftB configuration.
 
 HPE-SLES-12-2017-12-21-v3.1.zip - Defect fixes
 
@@ -17,93 +18,88 @@ HPE-SLES-12-2017-03-24.zip - First version
 ## Artifact Bundle Contents
 
 --------------------------------------------------------------------------------
-
-	            File name: HPE-SLES-12-2017-12-21-v3.1.zip
-		Name (in manifest): HPE-SLES-12-2017-12-21-v3.1
-		       Description: ImageStreamer artifacts for SLES 12 personalization and generalization. 
-		             Dated: 2017-11-02 (12:17:44)
-
+         File name: HPE-SLES-12-2018-08-23-v4.0.zip
+         Name (in manifest): HPE-SLES-12-2018-08-23-v4.0
+         Description: ImageStreamer artifacts for SLES 12 personalization and generalization. 
+         Dated: 2018-07-05 (06:02:33)
 --------------------------------------------------------------------------------
 
 Build Plans:
 
-	       Name: SLES-12-generalize-2017-12-15 (Type:capture)
-	Description: Removes personalization settings from SLES 12
+	       Name: SLES-12-personalize-and-configure-NICs-LVM-BP-2018-01-22 (Type:deploy)
+	Description: Personalizes SLES 12 and configures NICs. 
+	
 
-	       Name: SLES-12-personalize-and-NIC-bondings-LVM-BP-2017-12-21 (Type:deploy)
-	Description: Personalizes SLES 12 and configures NIC bondings 
-
-	       Name: SLES-12-personalize-and-configure-NICs-LVM-BP-2017-12-21 (Type:deploy)
-	Description: Personalizes SLES 12 and configures NICs
+	       Name: SLES-12-personalize-and-NIC-bondings-LVM-BP-2018-08-16 (Type:deploy)
+	Description: Personalizes SLES 12 and configures NIC bondings
 
 
+	       Name: SLES-12-generalize-2018-05-10 (Type:capture)
+	Description: Removes personalization settings from SLES 12.
+	            
+	            
 Plan Scripts:
 
-	       Name: SLES-12-mount-and-validate - 2017-03-15 (general)
-	   FullName: 0f0ee367-f42b-4b5b-b0f5-b1f18e09fd5f_planscript.json
-	Description: mount partition and validate the OS image
-
-
-	       Name: SLES-12-configure-multiple-NICs - 2017-08-08 (deploy)
-	   FullName: 13a1cd05-2673-49bc-aac7-e24e5b124840_planscript.json
-	Description: configure NICs
-
-
-	       Name: SLES-12-mount-generalize - 2017-03-15 (capture)
-	   FullName: 39b176a2-0137-4647-9072-83b24a59818b_planscript.json
-	Description: mount volume for generalization
-
-
-	       Name: SLES-12-unmount - 2017-03-15 (general)
-	   FullName: 449bff46-2589-4c24-a08d-5160ebd51dd6_planscript.json
-	Description: unmount partition after personalization
-
-
-	       Name: SLES-12-unmount-genralize - 2017-03-15 (capture)
-	   FullName: 4dd1e5ea-462f-448f-aa63-5149ff93680f_planscript.json
-	Description: unmount volume after generalization
-
-
-	       Name: SLES-12-configure-hostname-2017-12-21 (deploy)
-	   FullName: 5a57067c-8905-4cf5-aea3-51689c7a4b91_planscript.json
-	Description: configure hostname
-
-
-	       Name: SLES-12-generalize-host - 2017-03-15 (capture)
-	   FullName: 5f545325-45c3-4515-bc4e-9ec0399b54a5_planscript.json
-	Description: remove host configuration
-
-
-	       Name: SLES-12-generalize-network - 2017-03-15 (capture)
-	   FullName: 65c4e3d8-93c6-4c33-b28c-167d473b9e01_planscript.json
-	Description: remove network settings
-
-
-	       Name: SLES-12-configure-users - 2017-03-15 (deploy)
-	   FullName: 7a1877ba-9372-4761-8653-30ee316d0f74_planscript.json
-	Description: set root password and create user accounts
-
-
-	       Name: SLES-12-configure-multiple-NIC-bonding-2017-12-06 (deploy)
-	   FullName: 7aaa8d07-148f-4e15-aec9-45d221792785_planscript.json
-	Description: configure NIC bondings
-
-
 	       Name: SLES-12-generalize-users - 2017-03-15 (capture)
-	   FullName: 8cf35fd7-cda5-485f-8fa0-68776ca89c06_planscript.json
+	   FullName: 09b175b4-bd62-4b1b-bbdf-74f8667b40dc_planscript.json
 	Description: remove user settings
 
 
 	       Name: SLES-12-configure-partition-using-LVM - 2017-03-15 (deploy)
-	   FullName: 9ac74b9b-2123-4f02-bedb-bdafb499b327_planscript.json
+	   FullName: 1910def5-2c7e-4a78-b36c-11f36b996f18_planscript.json
 	Description: configure LVM
 
 
+	       Name: SLES-12-generalize-network - 2017-03-15 (capture)
+	   FullName: 1a07b2f6-1890-4752-b3c7-511b8d16f36e_planscript.json
+	Description: remove network settings
+
+
+	       Name: SLES-12-configure-users - 2018-01-22 (deploy)
+	   FullName: 26017177-6946-488e-b8e2-02b1a35d682c_planscript.json
+	Description: set root password and create user accounts
+
+
+	       Name: SLES-12-generalize-host - 2017-03-15 (capture)
+	   FullName: 691a8a71-70fc-46cb-9700-623323b042a9_planscript.json
+	Description: remove host configuration
+
+
+	       Name: SLES-12-mount-and-validate - 2018-05-10 (general)
+	   FullName: 87cce2c2-339d-4d0d-ae1d-e71bad1624f7_planscript.json
+	Description: mount partition and validate the OS image
+
+
+	       Name: SLES-12-configure-multiple-NICs - 2017-08-08 (deploy)
+	   FullName: 9e0ccd10-48b0-4d35-940c-40d335f1f281_planscript.json
+	Description: configure NICs
+
+
+	       Name: SLES-12-configure-hostname-2017-12-21 (deploy)
+	   FullName: a2828f97-ea2f-4c45-956c-6af29e56cd3c_planscript.json
+	Description: configure hostname
+
+
+	       Name: SLES-12-unmount-genralize - 2017-03-15 (capture)
+	   FullName: ba91e352-5798-4103-a5b6-7dde61577c1a_planscript.json
+	Description: unmount volume after generalization
+
+
+	       Name: SLES-12-unmount - 2017-03-15 (general)
+	   FullName: bf84c4ef-2db4-4783-b207-d141b893eb8c_planscript.json
+	Description: unmount partition after personalization
+
+
+	       Name: SLES-12-configure-multiple-NIC-bonding-2018-08-16 (deploy)
+	   FullName: c6445f84-fb48-4ef6-ae58-6a2d5551d979_planscript.json
+	Description: configure NIC bondings
+
+
 	       Name: SLES-12-manage-security-services - 2017-03-15 (deploy)
-	   FullName: c3b6d09c-1d42-4ba1-ac83-47333f2f4007_planscript.json
+	   FullName: d4f4c03e-8081-4620-ac72-7b351028e00e_planscript.json
 	Description: manage security services
 
 
-
-
-
+	       Name: SLES-12-mount-generalize - 2018-05-10 (capture)
+	   FullName: dc5fbf4b-d46c-4313-a33d-9e7ce6bb8d72_planscript.json
+	Description: mount volume for generalization

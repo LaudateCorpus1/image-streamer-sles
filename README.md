@@ -1,2 +1,2 @@
 # image-streamer-sles
-Sample SLES artifact bundles for use with HPE Image Streamer v4.2 release
+Sample SLES artifact bundles for use with HPE Image Streamer v5.0 release

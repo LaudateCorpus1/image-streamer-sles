@@ -1,18 +1,22 @@
-# SLES12 artifacts for ImageStreamer v5.0 release
+# SLES12/15 artifacts for ImageStreamer v5.2 release
 
 ## Note: 
-- All artifact bundles in this repo are compatible with ImageStreamer v5.0 release
+- All artifact bundles in this repo are compatible with ImageStreamer v5.2 release
 - Click on 'Branch:' drop down menu on this page to get artifact bundles for other ImageStreamer releases
 - The following SLES versions are supported
 	- SLES 12 SP1
 	- SLES 12 SP2
 	- SLES 12 SP3
 	- SLES 12 SP4
+	- SLES 15 SP1
+	- SLES 15 SP2
 	
 ## Version history
 
-HPE-SLES12-EFI-2019-06-16-v5.0.zip 
- - Artifact bundle for SLES12 for v5.0
+HPE-SLES12-EFI-2020-04-02-v5.2.zip 
+ - Artifact bundle for SLES12 for v5.2
+HPE-SLES15-EFI-2020-04-02-v5.2.zip
+ - Artifact bundle for SLES15 for v5.2
 
 ## EFI based artifacts
 
@@ -26,16 +30,15 @@ Until now the root partition was mounted, but now, to enable UEFI based deployme
 ## Note: 
 - ***A new Golden Image needs to be created for using EFI based artifact bundle. Any existing Golden Images created using earlier releases of artifact bundle will not work with EFI artifact bundle. Follow the below steps to capture the Golden Image for SLES12.***
 
-( In case of HPE Vitual Connect SE 100Gb F32 Module or HPE Synergy 50Gb Interconnect Link Module hardware, follow the steps given in the linked document to load the driver and capture the golden image.
-https://github.com/HewlettPackard/image-streamer-sles/blob/v5.0/docs/HPE%20Synergy%20ImageStreamer%20Documentation%20to%20load%20drivers%20on%20SLES12%20during%20OS%20installation.pdf )
+( In case of HPE Vitual Connect SE 100Gb F32 Module or HPE Synergy 50Gb Interconnect Link Module hardware, follow the steps given in the linked document to load the driver and capture the golden image.https://github.com/HewlettPackard/image-streamer-sles/blob/v5.2/docs/HPE%20Synergy%20ImageStreamer%20Documentation%20to%20load%20drivers%20on%20SLES12%20during%20OS%20installation.pdf )
 
 - If you do not have a external hard drive attached to the blade please leave the default "disabled" option of filesystem attribute as is. Please make sure you change Filesystem Attribute in the Server Profile creation page to desired filesystem type "only when you have a external drive attached to the blade".
 
 - LVM should be created at the time of installing the OS, on the bare metal, before image capture is done. The Filesystem type attribute in the Server Profile Page will not create LVM on the golden image which gets mounted, at the time of deployment.
 
-## Golden Image creation for EFI based deployment of SLES12:
+## Golden Image creation for EFI based deployment of SLES12/SLES15:
 
-1.	Ensure that you have access to SLES12 ISO installation file containing iSCSI device drivers.
+1.	Ensure that you have access to SLES12/SLES15 ISO installation file containing iSCSI device drivers.
 
 2.	Create a server profile with “HPE - Foundation 1.0 - create empty OS Volume” as OS Deployment plan and any available server 		hardware. Set an appropriate value for volume size in MiB units. The HPE Synergy Server will be configured for access to this 		empty OS Volume.
 

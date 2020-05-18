@@ -28,7 +28,7 @@ Until now the root partition was mounted, but now, to enable UEFI based deployme
 # Prerequisite for using EFI Based Artifact bundle
 
 ## Note: 
-- ***A new Golden Image needs to be created for using EFI based artifact bundle. Any existing Golden Images created using earlier releases of artifact bundle will not work with EFI artifact bundle. Follow the below steps to capture the Golden Image for SLES12.***
+- ***A new Golden Image needs to be created for using EFI based artifact bundle. Any existing Golden Images created using earlier releases of artifact bundle will not work with EFI artifact bundle. Follow the below steps to capture the Golden Image for SLES12/SLES15.***
 
 ( In case of HPE Vitual Connect SE 100Gb F32 Module or HPE Synergy 50Gb Interconnect Link Module hardware, follow the steps given in the linked document to load the driver and capture the golden image.https://github.com/HewlettPackard/image-streamer-sles/blob/v5.2/docs/HPE%20Synergy%20ImageStreamer%20Documentation%20to%20load%20drivers%20on%20SLES12%20during%20OS%20installation.pdf )
 

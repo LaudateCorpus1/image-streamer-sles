@@ -15,6 +15,7 @@
 
 HPE-SLES12-EFI-2020-04-02-v5.2.zip 
  - Artifact bundle for SLES12 for v5.2
+ 
 HPE-SLES15-EFI-2020-04-02-v5.2.zip
  - Artifact bundle for SLES15 for v5.2
 

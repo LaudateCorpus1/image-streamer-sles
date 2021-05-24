@@ -85,7 +85,7 @@ Until now the root partition was mounted in the plan scripts, but now, to enable
 
 ## Follow the below document to load driver for HPE Virtual Connect SE 100Gb F32 Module for Synergy or HPE Synergy 50Gb Interconnect Link Module.
 
-- https://github.hpe.com/ImageStreamer/image-streamer-sles/blob/v6.10/docs/HPE%20Synergy%20ImageStreamer%20Documentation%20to%20load%20drivers%20on%20SLES12%20during%20OS%20installation.pdf
+- https://github.com/HewlettPackard/image-streamer-sles/blob/v6.10/docs/HPE%20Synergy%20ImageStreamer%20Documentation%20to%20load%20drivers%20on%20SLES12%20during%20OS%20installation.pdf
 
 
 

@@ -1,7 +1,7 @@
-# SLES12 and SLES15 artifacts for ImageStreamer v6.00 release
+# SLES12 and SLES15 artifacts for ImageStreamer v6.10 release
 
 ## Note: 
-- All artifact bundles in this repo are compatible with ImageStreamer v6.00 and below release
+- All artifact bundles in this repo are compatible with ImageStreamer v6.10 and below release
 - Click on 'Branch:' drop down menu on this page to get artifact bundles for other ImageStreamer releases
 - Following version of SLES is supported
 	- SLES 12 SP1 
@@ -21,11 +21,12 @@ This was not possible earlier because, Guestfish, used to customize the boot vol
 Until now the root partition was mounted in the plan scripts, but now, to enable deployment using FAT32,  mount the partition (/boot/efi) and run the plan scripts through it for personalization, which provides support for all the filesystems.
 
 ## Version history
-- HPE-SLES15-EFI-2020-10-28-v6.00.4.zip
+- HPE-SLES15-EFI-2020-10-28-v6.10.zip
 	- Has fix for SSH not getting connected
 	- Supports only systemd boot process
-- HPE-SLES12-EFI-2020-04-02-v6.00.zip
-	
+- HPE-SLES12-EFI-2020-04-02-v6.10.zip
+	- HPE-SLES12-EFI-2020-04-02-v6.10.zip
+
 # Prerequisite for using EFI Based Artifact bundle
 
 ## Note: 
@@ -84,7 +85,7 @@ Until now the root partition was mounted in the plan scripts, but now, to enable
 
 ## Follow the below document to load driver for HPE Virtual Connect SE 100Gb F32 Module for Synergy or HPE Synergy 50Gb Interconnect Link Module.
 
-- https://github.com/HewlettPackard/image-streamer-sles/blob/v6.00/docs/HPE%20Synergy%20ImageStreamer%20Documentation%20to%20load%20drivers%20on%20SLES12%20during%20OS%20installation.pdf
+- https://github.hpe.com/ImageStreamer/image-streamer-sles/blob/v6.10/docs/HPE%20Synergy%20ImageStreamer%20Documentation%20to%20load%20drivers%20on%20SLES12%20during%20OS%20installation.pdf
 
 
 
@@ -92,8 +93,8 @@ Until now the root partition was mounted in the plan scripts, but now, to enable
 
 --------------------------------------------------------------------------------
 
-                    File name: HPE-SLES12-EFI-2020-04-02-v6.00.zip
-                Name (in manifest): HPE-SLES12-EFI-2020-04-02-v6.00
+                    File name: HPE-SLES12-EFI-2020-04-02-v6.10.zip
+                Name (in manifest): HPE-SLES12-EFI-2020-04-02-v6.10
                        Description: ImageStreamer artifacts for SLES 12 using FAT32 partition (/boot/efi) personalization. (c) Copyright 2017-2020 Hewlett Packard Enterprise Development LP. Licensed under the Apache License, Version 2.0 (the \"License\");you may not use this file except in compliance with the License.You may obtain a copy of the License..
                              Dated: 2020-02-13 (02:42:42)
 
@@ -167,8 +168,8 @@ Plan Scripts:
 
 --------------------------------------------------------------------------------
 
-                    File name: HPE-SLES15-EFI-2020-10-28-v6.00.zip
-                Name (in manifest): HPE-SLES15-EFI-2020-10-28-v6.00
+                    File name: HPE-SLES15-EFI-2020-10-28-v6.10.zip
+                Name (in manifest): HPE-SLES15-EFI-2020-10-28-v6.10
                        Description: ImageStreamer artifacts for SLES 15 using FAT32 partition (/boot/efi) personalization. (c) Copyright 2017-2020 Hewlett Packard Enterprise Development LP. Licensed under the Apache License, Version 2.0 (the \"License\");you may not use this file except in compliance with the License.You may obtain a copy of the License..
                              Dated: 2020-09-09 (03:35:16)
 
